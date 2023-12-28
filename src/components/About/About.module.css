@@ -1,0 +1,45 @@
+.about {
+  background-color: #eaeaea;
+}
+
+.textWrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  padding: 12px;
+  border-radius: 12px;
+
+  background-color: #e4e4e4;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  animation: scaleAnimation 3s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.95);
+  }
+}
+
+.title {
+  font-size: 28px;
+  color: #ff6347;
+}
+
+.desc {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}

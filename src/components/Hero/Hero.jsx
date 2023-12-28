@@ -5,9 +5,16 @@ import { FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className={"container"}>
         <div className={css.wrapper}>
+          <div className={css.devImageWrapper}>
+            <img
+              src="/images/me.jpg"
+              alt="developer"
+              className={css.devImage}
+            />
+          </div>
           <div className={css.textContainer}>
             <h1 className={css.title}>Front-End Developer</h1>
             <p className={css.description}>
@@ -26,13 +33,6 @@ const Hero = () => {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className={css.devImageWrapper}>
-            <img
-              src="/images/me.jpg"
-              alt="developer"
-              className={css.devImage}
-            />
           </div>
         </div>
 
