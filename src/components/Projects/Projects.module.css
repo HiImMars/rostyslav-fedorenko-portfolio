@@ -1,6 +1,15 @@
 .title {
   font-size: 28px;
   color: #ff6347;
+  margin-bottom: 40px;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 
 .projectItem {
@@ -21,12 +30,107 @@
     rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.projectItem:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
 @media only screen and (min-width: 1200px) {
   .projectItem {
+    flex-direction: row;
+  }
+  .projectItem:nth-child(even) {
     flex-direction: row;
   }
 }
 
 .projectScreenshot {
-  width: 300px;
+  max-width: 340px;
+  border-radius: 12px;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 340px;
+}
+@media only screen and (min-width: 768px) {
+  .projectScreenshot {
+    max-width: 640px;
+  }
+  .descriptionWrapper {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .projectScreenshot {
+    max-width: 500px;
+  }
+  .descriptionWrapper {
+    max-width: 500px;
+  }
+}
+
+.projectName {
+  font-size: 24px;
+  color: #795548;
+  text-align: center;
+}
+
+.projectDescription {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #666666;
+}
+
+.techUsedIconsList {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.linksList {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkItem {
+  display: flex;
+  gap: 6px;
+}
+
+.link {
+  font-size: 20px;
+  color: #008080;
+
+  display: flex;
+  gap: 6px;
+
+  transition: color 200ms linear;
+}
+
+.link:hover,
+.link:focus {
+  color: #ff6347;
+}
+
+.techUsedText {
+  display: block;
+  padding: 8px;
+
+  font-size: 16px;
+  color: #795548;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
