@@ -1,0 +1,56 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #666666;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .text {
+    font-size: 22px;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.linkedin {
+  fill: white;
+  width: 30px;
+  height: 30px;
+
+  transition: fill 200ms linear;
+}
+
+.linkedin:hover,
+.linkedin:focus {
+  fill: #ff6347;
+}
+
+.github {
+  fill: white;
+  width: 30px;
+  height: 30px;
+
+  transition: fill 200ms linear;
+}
+
+.github:hover,
+.github:focus {
+  fill: #ff6347;
+}

@@ -1,0 +1,95 @@
+.contacts {
+  background-color: #eaeaea;
+}
+
+.title {
+  font-size: 28px;
+  color: #ff6347;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .title {
+    font-size: 34px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 50%;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.icon {
+  fill: #795548;
+  width: 30px;
+  height: 30px;
+}
+
+.subtitle {
+  color: #333333;
+  font-size: 22px;
+
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #008080;
+  font-size: 14px;
+
+  transition: color 250ms linear;
+}
+
+.link:hover,
+.link:focus {
+  color: #ff6347;
+}
+
+@media only screen and (min-width: 768px) {
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .link {
+    font-size: 20px;
+  }
+}

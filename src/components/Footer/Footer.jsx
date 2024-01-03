@@ -1,22 +1,35 @@
 import React from "react";
+import css from "./Footer.module.css";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
-      <h2>Footer</h2>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, qui
-      quidem accusamus dolorem possimus eum magnam quas. Dicta repudiandae
-      temporibus vero delectus, omnis eveniet minima, natus voluptatum, incidunt
-      distinctio tempore magnam est libero maiores officia? Doloribus error
-      reiciendis sapiente laborum! Numquam, officiis temporibus. Expedita iusto
-      molestias, soluta qui cumque laborum sint. Voluptas iste velit dolor
-      praesentium saepe obcaecati perferendis corporis? Maxime nisi voluptatum
-      voluptatibus minus laudantium eveniet quod sapiente tempora doloribus
-      illum quam velit aliquid voluptate, magnam consequuntur beatae ea numquam
-      sunt reiciendis qui nulla corrupti veniam ex. Incidunt voluptatibus nam
-      corrupti nihil consequatur soluta minus officiis voluptate nostrum
-      quibusdam.
-    </div>
+    <footer className={css.footer}>
+      <div className={`container ${css.footerWrapper}`}>
+        <p className={css.text}>Copyright ©2024. All rights reserved</p>
+        <ul className={css.links}>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/rostyslav-fedorenko/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className={css.linkedin} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/HiImMars"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub className={css.github} />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   );
 };
 

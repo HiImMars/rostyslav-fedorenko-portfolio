@@ -5,7 +5,7 @@ import css from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <section>
+    <section className={css.projects} id="projects">
       <div className="container">
         <h2 className={css.title}>Projects</h2>
         <ul className={css.projectList}>

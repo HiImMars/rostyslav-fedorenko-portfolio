@@ -1,26 +1,49 @@
 import React from "react";
+import css from "./Contacts.module.css";
+import { MdOutlineMail } from "react-icons/md";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const Contacts = () => {
   return (
-    <div>
-      <h2>CONTACTS</h2>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-      voluptatem dolor, nesciunt tempore ratione veniam molestiae tenetur ex
-      animi consequuntur distinctio. Quam ipsam numquam eaque ab dolores quos
-      sit, ratione voluptas libero odit aliquid laborum laudantium id nostrum
-      nobis corporis necessitatibus minus! Itaque doloremque ullam sed aliquid
-      quos vitae eos cum necessitatibus! At dolor eveniet illo architecto! Ab,
-      deleniti. Eaque quidem, eveniet voluptatibus deserunt facere et dicta non
-      rerum veritatis quae nobis incidunt totam nisi iure, soluta maxime
-      reprehenderit earum alias aliquid ea! Voluptatem odit a ipsum quo
-      perferendis non facere dolorem soluta et illum possimus consequuntur
-      eveniet totam, fugiat cumque cupiditate quaerat unde. Fuga est fugiat quia
-      libero aliquam, odio earum porro quos. Sint dicta minima ea soluta velit
-      culpa quae eligendi unde. Veritatis, nam error dolorum laborum temporibus,
-      quisquam incidunt nisi placeat sit quibusdam rerum fugiat delectus! Omnis
-      architecto exercitationem dolores. Esse porro voluptates aspernatur
-      commodi sit harum!
-    </div>
+    <section className={css.contacts} id="contacts">
+      <div className="container">
+        <h2 className={css.title}>Contacts</h2>
+        <ul className={css.list}>
+          <li className={css.item}>
+            <div className={css.iconWrapper}>
+              <MdOutlineMail className={css.icon} />
+            </div>
+            <div className={css.contactWrapper}>
+              <h3 className={css.subtitle}>Mail</h3>
+              <a
+                href="mailto:fedorenkorostyslav@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className={css.link}
+              >
+                fedorenkorostyslav@gmail.com
+              </a>
+            </div>
+          </li>
+          <li className={css.item}>
+            <div className={css.iconWrapper}>
+              <FaTelegramPlane className={css.icon} />
+            </div>
+            <div className={css.contactWrapper}>
+              <h3 className={css.subtitle}>Telegram</h3>
+              <a
+                href="https://t.me/r1hen7"
+                target="_blank"
+                rel="noreferrer"
+                className={css.link}
+              >
+                t.me/r1hen7
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   );
 };
 

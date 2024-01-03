@@ -10,7 +10,7 @@ const Hero = () => {
         <div className={css.wrapper}>
           <div className={css.devImageWrapper}>
             <img
-              src="/images/me.jpg"
+              src="/images/dev-photo.png"
               alt="developer"
               className={css.devImage}
             />
@@ -23,12 +23,20 @@ const Hero = () => {
             </p>
             <ul className={css.links}>
               <li>
-                <a href="https://www.linkedin.com/in/rostyslav-fedorenko/">
+                <a
+                  href="https://www.linkedin.com/in/rostyslav-fedorenko/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaLinkedin className={css.linkedin} />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/HiImMars">
+                <a
+                  href="https://github.com/HiImMars"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaGithub className={css.github} />
                 </a>
               </li>
