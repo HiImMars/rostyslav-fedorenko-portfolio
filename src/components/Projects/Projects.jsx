@@ -2,6 +2,10 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
 import css from "./Projects.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const Projects = () => {
   return (
@@ -10,7 +14,7 @@ const Projects = () => {
         <h2 className={css.title}>Projects</h2>
         <ul className={css.projectList}>
           {/* 1 */}
-          <li className={css.projectItem}>
+          <li className={css.projectItem} data-aos="fade-right">
             <a
               href="https://hiimmars.github.io/admin-dashboard/"
               target="_blank"
@@ -70,7 +74,7 @@ const Projects = () => {
             </div>
           </li>
           {/* 2 */}
-          <li className={css.projectItem}>
+          <li className={css.projectItem} data-aos="fade-left">
             <div className={css.descriptionWrapper}>
               <h3 className={css.projectName}>CryptoVerse</h3>
               <p className={css.projectDescription}>
@@ -129,7 +133,7 @@ const Projects = () => {
             </a>
           </li>
           {/* 3 */}
-          <li className={css.projectItem}>
+          <li className={css.projectItem} data-aos="fade-right">
             <a
               href="https://natalikoyani.github.io/Team_10/"
               target="_blank"
@@ -189,7 +193,7 @@ const Projects = () => {
             </div>
           </li>
           {/* 4 */}
-          <li className={css.projectItem}>
+          <li className={css.projectItem} data-aos="fade-left">
             <div className={css.descriptionWrapper}>
               <h3 className={css.projectName}>Simply Chocolate</h3>
               <p className={css.projectDescription}>
@@ -248,7 +252,7 @@ const Projects = () => {
             </a>
           </li>
           {/* 5 */}
-          <li className={css.projectItem}>
+          <li className={css.projectItem} data-aos="fade-right">
             <a
               href="https://hiimmars.github.io/goit-markup-hw-07/"
               target="_blank"

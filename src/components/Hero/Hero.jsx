@@ -2,12 +2,30 @@ import React from "react";
 import css from "./Hero.module.css";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  const slideVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
   return (
     <section className="hero" id="home">
       <div className={"container"}>
-        <div className={css.wrapper}>
+        {/* <div className={css.wrapper}> */}
+        <motion.div
+          className={css.wrapper}
+          initial="hidden"
+          animate="visible"
+          variants={slideVariants}
+        >
           <div className={css.devImageWrapper}>
             <img
               src="/images/dev-photo.png"
@@ -42,7 +60,8 @@ const Hero = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
+        {/* </div> */}
 
         <div className={css.techStackContainer}>
           <p className={css.techStackText}>Tech Stack</p>

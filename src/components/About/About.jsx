@@ -1,12 +1,47 @@
 import React from "react";
 import css from "./About.module.css";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const rightSlide = {
+    hidden: {
+      opacity: 0,
+      x: -100, // right
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
+  const leftSlide = {
+    hidden: {
+      opacity: 0,
+      x: 100, // left
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
   return (
     <section className={css.about} id="about">
       <div className="container">
         <div className={css.contentWrapper}>
-          <div className={css.textWrapper}>
+          {/* <div className={css.textWrapper}> */}
+          <motion.div
+            className={css.textWrapper}
+            initial="hidden"
+            animate="visible"
+            variants={rightSlide}
+          >
             <h2 className={css.title}>About me</h2>
             <p className={css.desc}>
               I'm a junior front-end developer skilled in HTML, CSS, JavaScript,
@@ -19,13 +54,21 @@ const About = () => {
               and a determination to deliver high-quality solutions. Let's build
               something amazing together! 🚀
             </p>
-          </div>
-          <img
-            src="/images/about-me.png"
-            alt="about me"
+          </motion.div>
+          {/* </div> */}
+          <motion.div
             className={css.image}
-            width="300px"
-          />
+            initial="hidden"
+            animate="visible"
+            variants={leftSlide}
+          >
+            <img
+              src="/images/about-me.png"
+              alt="about me"
+              className={css.image}
+              width="300px"
+            />
+          </motion.div>
         </div>
       </div>
     </section>
