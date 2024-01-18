@@ -1,6 +1,6 @@
-.contacts {
+/* .contacts {
   background-color: #eaeaea;
-}
+} */
 
 .title {
   font-size: 28px;
@@ -50,28 +50,25 @@
 
   padding: 12px;
   border-radius: 50%;
-
-  box-shadow:
-    rgba(0, 0, 0, 0.16) 0px 3px 6px,
-    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: #142226;
 }
 
 .icon {
-  fill: #795548;
+  fill: white;
   width: 30px;
   height: 30px;
 }
 
 .subtitle {
-  color: #333333;
+  color: white;
   font-size: 22px;
 
   margin-bottom: 10px;
 }
 
 .link {
-  color: #008080;
-  font-size: 14px;
+  color: rgb(209, 255, 109);
+  font-size: 12px;
 
   transition: color 250ms linear;
 }
