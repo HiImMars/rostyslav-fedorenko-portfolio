@@ -5,7 +5,7 @@ body {
   font-family: "Comfortaa", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #e4e4e4; */
+
   background-color: #240090;
   color: white;
 }
@@ -70,11 +70,22 @@ a {
 @media only screen and (min-width: 1600px) {
   .container {
     max-width: 1600px;
+    padding: 0 24px;
   }
 }
 
 section {
   padding: 80px 0;
+}
+
+section.about {
+  padding: 20px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  section.about {
+    padding: 80px 0;
+  }
 }
 
 .fly-in {

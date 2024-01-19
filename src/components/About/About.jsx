@@ -32,7 +32,7 @@ const About = () => {
   };
 
   return (
-    <section className={css.about} id="about">
+    <section className={`${css.about} about`} id="about">
       <div className="container">
         <div className={css.contentWrapper}>
           {/* <div className={css.textWrapper}> */}

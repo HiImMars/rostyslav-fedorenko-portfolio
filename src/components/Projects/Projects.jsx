@@ -132,20 +132,69 @@ const Projects = () => {
               />
             </a>
           </li>
-          {/* 3 */}
+          {/* NEW PROJECT 3 ================================================================================*/}
           <li className={css.projectItem} data-aos="fade-right">
             <a
-              href="https://natalikoyani.github.io/Team_10/"
+              href="https://hiimmars.github.io/e-commerce-shop/"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                src="/images/tasty-treats.png"
+                src="/images/fake-store.png"
                 alt="project screenshot"
                 className={css.projectScreenshot}
               />
             </a>
-
+            <div className={css.descriptionWrapper}>
+              <h3 className={css.projectName}>Fake Store</h3>
+              <p className={css.projectDescription}>
+                Style Fusion offers a seamless blend of fashion, tech, and
+                elegance. Dive into an extensive e-commerce platform featuring a
+                curated collection of clothing, electronics, and jewelry.
+                Explore, shop, and elevate your style effortlessly, while
+                enjoying a user-friendly interface and personalized
+                recommendations.
+              </p>
+              <ul className={css.techUsedIconsList}>
+                <li className={css.techUsedIconItem}>
+                  <p className={css.techUsedText}>React</p>
+                </li>
+                <li className={css.techUsedIconItem}>
+                  <p className={css.techUsedText}>Redux Toolkit</p>
+                </li>
+                <li className={css.techUsedIconItem}>
+                  <p className={css.techUsedText}>Tailwind CSS</p>
+                </li>
+              </ul>
+              <ul className={css.linksList}>
+                <li className={css.linkItem}>
+                  <a
+                    href="https://github.com/HiImMars/e-commerce-shop"
+                    rel="noreferrer"
+                    target="_blank"
+                    className={css.link}
+                  >
+                    Code
+                    <FaGithub />
+                  </a>
+                </li>
+                <li className={css.linkItem}>
+                  <a
+                    href="https://hiimmars.github.io/e-commerce-shop/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className={css.link}
+                  >
+                    Live Demo
+                    <BiLinkExternal />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          {/* NEW PROJECT 3 ================================================================================*/}
+          {/* 4 */}
+          <li className={css.projectItem} data-aos="fade-left">
             <div className={css.descriptionWrapper}>
               <h3 className={css.projectName}>Tasty Treats</h3>
               <p className={css.projectDescription}>
@@ -191,9 +240,31 @@ const Projects = () => {
                 </li>
               </ul>
             </div>
+            <a
+              href="https://natalikoyani.github.io/Team_10/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/tasty-treats.png"
+                alt="project screenshot"
+                className={css.projectScreenshot}
+              />
+            </a>
           </li>
-          {/* 4 */}
-          <li className={css.projectItem} data-aos="fade-left">
+          {/* 5 */}
+          <li className={css.projectItem} data-aos="fade-right">
+            <a
+              href="https://tanyajulieva.github.io/project-CodeLovers23/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/simply-chocolate.png"
+                alt="project screenshot"
+                className={css.projectScreenshot}
+              />
+            </a>
             <div className={css.descriptionWrapper}>
               <h3 className={css.projectName}>Simply Chocolate</h3>
               <p className={css.projectDescription}>
@@ -239,32 +310,9 @@ const Projects = () => {
                 </li>
               </ul>
             </div>
-            <a
-              href="https://tanyajulieva.github.io/project-CodeLovers23/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="/images/simply-chocolate.png"
-                alt="project screenshot"
-                className={css.projectScreenshot}
-              />
-            </a>
           </li>
-          {/* 5 */}
-          <li className={css.projectItem} data-aos="fade-right">
-            <a
-              href="https://hiimmars.github.io/goit-markup-hw-07/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="/images/webstudio.png"
-                alt="project screenshot"
-                className={css.projectScreenshot}
-              />
-            </a>
-
+          {/* 6 */}
+          <li className={css.projectItem} data-aos="fade-left">
             <div className={css.descriptionWrapper}>
               <h3 className={css.projectName}>WebStudio</h3>
               <p className={css.projectDescription}>
@@ -307,6 +355,17 @@ const Projects = () => {
                 </li>
               </ul>
             </div>
+            <a
+              href="https://hiimmars.github.io/goit-markup-hw-07/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/webstudio.png"
+                alt="project screenshot"
+                className={css.projectScreenshot}
+              />
+            </a>
           </li>
         </ul>
       </div>
