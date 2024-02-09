@@ -291,6 +291,13 @@ const Hero = () => {
             </li>
             <li className={css.techStackItem}>
               <img
+                src="https://skillicons.dev/icons?i=mui"
+                alt="mui"
+                className={css.image}
+              />
+            </li>
+            <li className={css.techStackItem}>
+              <img
                 src="https://skillicons.dev/icons?i=tailwind"
                 alt="tailwind"
                 className={css.image}

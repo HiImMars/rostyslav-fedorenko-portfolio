@@ -111,27 +111,47 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
   .techStackContainer {
     gap: 80px;
+    flex-direction: row;
   }
 }
 
 .techStackList {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 580px) {
+  .techStackList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .techStackList {
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 
 .techStackText {
   font-size: 18px;
   font-weight: 600;
   color: rgb(209, 255, 109);
-  border-right: 2px solid rgb(209, 255, 109);
-  padding-right: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .techStackText {
+    border-right: 2px solid rgb(209, 255, 109);
+    padding-right: 20px;
+  }
 }
 
 .techStackItem {
