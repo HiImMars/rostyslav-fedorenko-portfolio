@@ -34,7 +34,6 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className={`container ${css.heroContainer}`}>
-        {/* <div className={css.wrapper}> */}
         <motion.div
           className={css.wrapper}
           initial="hidden"
@@ -242,7 +241,6 @@ const Hero = () => {
             </ul>
           </div>
         </motion.div>
-        {/* </div> */}
 
         <div className={css.techStackContainer}>
           <p className={css.techStackText}>Tech Stack</p>

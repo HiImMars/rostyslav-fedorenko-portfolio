@@ -1,20 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
 import css from "./Projects.module.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-AOS.init();
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
+  const staggerVariants = {
+    visible: { transition: { delayChildren: 0.1 } },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <section className={css.projects} id="projects">
       <div className="container">
         <h2 className={css.title}>Projects</h2>
-        <ul className={css.projectList}>
-          {/* 1 */}
-          <li className={css.projectItem} data-aos="fade-right">
+        <motion.ul
+          className={css.projectList}
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={staggerVariants}
+        >
+          {/* 1 ================================================================================*/}
+          <motion.li
+            className={css.projectItem}
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={fadeIn}
+            transition={{ duration: 1.2 }}
+          >
             <a
               href="https://hiimmars.github.io/admin-dashboard/"
               target="_blank"
@@ -72,9 +103,16 @@ const Projects = () => {
                 </li>
               </ul>
             </div>
-          </li>
-          {/* 2 */}
-          <li className={css.projectItem} data-aos="fade-left">
+          </motion.li>
+          {/* 2 ================================================================================*/}
+          <motion.li
+            className={css.projectItem}
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={fadeIn}
+            transition={{ duration: 1.5 }}
+          >
             <div className={css.descriptionWrapper}>
               <h3 className={css.projectName}>CryptoVerse</h3>
               <p className={css.projectDescription}>
@@ -131,9 +169,16 @@ const Projects = () => {
                 className={css.projectScreenshot}
               />
             </a>
-          </li>
-          {/* NEW PROJECT 3 ================================================================================*/}
-          <li className={css.projectItem} data-aos="fade-right">
+          </motion.li>
+          {/* 3 ================================================================================*/}
+          <motion.li
+            className={css.projectItem}
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={fadeIn}
+            transition={{ duration: 1.5 }}
+          >
             <a
               href="https://hiimmars.github.io/e-commerce-shop/"
               target="_blank"
@@ -191,10 +236,16 @@ const Projects = () => {
                 </li>
               </ul>
             </div>
-          </li>
-          {/* NEW PROJECT 3 ================================================================================*/}
-          {/* 4 */}
-          <li className={css.projectItem} data-aos="fade-left">
+          </motion.li>
+          {/* 4 ================================================================================*/}
+          <motion.li
+            className={css.projectItem}
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={fadeIn}
+            transition={{ duration: 1.5 }}
+          >
             <div className={css.descriptionWrapper}>
               <h3 className={css.projectName}>Tasty Treats</h3>
               <p className={css.projectDescription}>
@@ -251,9 +302,16 @@ const Projects = () => {
                 className={css.projectScreenshot}
               />
             </a>
-          </li>
-          {/* 5 */}
-          <li className={css.projectItem} data-aos="fade-right">
+          </motion.li>
+          {/* 5 ================================================================================*/}
+          <motion.li
+            className={css.projectItem}
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={fadeIn}
+            transition={{ duration: 1.5 }}
+          >
             <a
               href="https://tanyajulieva.github.io/project-CodeLovers23/"
               target="_blank"
@@ -310,9 +368,16 @@ const Projects = () => {
                 </li>
               </ul>
             </div>
-          </li>
-          {/* 6 */}
-          <li className={css.projectItem} data-aos="fade-left">
+          </motion.li>
+          {/* 6 ================================================================================*/}
+          <motion.li
+            className={css.projectItem}
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={fadeIn}
+            transition={{ duration: 1.5 }}
+          >
             <div className={css.descriptionWrapper}>
               <h3 className={css.projectName}>WebStudio</h3>
               <p className={css.projectDescription}>
@@ -366,8 +431,8 @@ const Projects = () => {
                 className={css.projectScreenshot}
               />
             </a>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
       </div>
     </section>
   );
