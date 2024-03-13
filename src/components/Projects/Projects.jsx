@@ -292,7 +292,7 @@ const Projects = () => {
               </ul>
             </div>
             <a
-              href="https://natalikoyani.github.io/Team_10/"
+              href="https://natalikoyani.github.io/tasty-treats/"
               target="_blank"
               rel="noreferrer"
             >
