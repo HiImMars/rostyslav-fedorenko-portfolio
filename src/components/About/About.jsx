@@ -44,8 +44,8 @@ const About = () => {
           >
             <h2 className={css.title}>About me</h2>
             <p className={css.desc}>
-              I'm a junior front-end developer skilled in HTML, CSS, JavaScript,
-              React, Redux, and TypeScript. I'm passionate about creating
+              I'm a front-end developer skilled in HTML, CSS, JavaScript,
+              React, Redux, TypeScript and Tailwind CSS. I'm passionate about creating
               dynamic and user-friendly web applications. As an aspiring
               developer, I am dedicated to continuous learning and growth within
               the ever-evolving field of web development. Whether it's solving

@@ -84,69 +84,69 @@ const Hero = () => {
           fill="none"
           stroke="rgb(209, 255, 109)"
         >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></g>
           <g id="SVGRepo_iconCarrier">
             <style type="text/css"> </style>
             <g>
-              <rect class="st0" width="112" height="112"></rect>
+              <rect className="st0" width="112" height="112"></rect>
               <rect
                 x="200.008"
-                class="st0"
+                className="st0"
                 width="111.984"
                 height="112"
-                stroke-width="4"
+                strokeWidth="4"
               ></rect>
               <rect
                 x="400"
-                class="st0"
+                className="st0"
                 width="112"
                 height="112"
-                stroke-width="4"
+                strokeWidth="4"
               ></rect>
               <rect
                 y="200.008"
-                class="st0"
+                className="st0"
                 width="112"
                 height="111.984"
-                stroke-width="4"
+                strokeWidth="4"
               ></rect>
               <rect
                 x="200.008"
                 y="200.008"
-                class="st0"
+                className="st0"
                 width="111.984"
                 height="111.984"
-                stroke-width="4"
+                strokeWidth="4"
               ></rect>
               <rect
                 x="400"
                 y="200.008"
-                class="st0"
+                className="st0"
                 width="112"
                 height="111.984"
-                stroke-width="4"
+                strokeWidth="4"
               ></rect>
-              <rect class="st0" y="400" width="112" height="112"></rect>
+              <rect className="st0" y="400" width="112" height="112"></rect>
               <rect
                 x="200.008"
                 y="400"
-                class="st0"
+                className="st0"
                 width="111.984"
                 height="112"
-                stroke-width="4"
+                strokeWidth="4"
               ></rect>
               <rect
                 x="400"
                 y="400"
-                class="st0"
+                className="st0"
                 width="112"
                 height="112"
-                stroke-width="4"
+                strokeWidth="4"
               ></rect>
             </g>
           </g>
@@ -167,8 +167,8 @@ const Hero = () => {
               <path
                 fill="none"
                 stroke="#4831d4"
-                stroke-miterlimit="50"
-                stroke-width="2"
+                strokeMiterlimit="50"
+                strokeWidth="2"
                 d="M17.053 9.57a7.891 7.891 0 11-15.782 0 7.891 7.891 0 0115.782 0zM45.122 9.57a7.891 7.891 0 11-15.782 0 7.891 7.891 0 0115.782 0zM73.19 9.57a7.891 7.891 0 11-15.781 0 7.891 7.891 0 0115.782 0zM101.26 9.57a7.891 7.891 0 11-15.782 0 7.891 7.891 0 0115.782 0zM129.329 9.57a7.891 7.891 0 11-15.783 0 7.891 7.891 0 0115.783 0zM238.083 103.963v0l-.561 22.259v0l22.259-.561v0l-.561 22.258v0l22.259-.56v0l-.561 22.258v0l22.259-.56v0l-.559 22.26v0l22.26-.56v0"
               ></path>
             </svg>
@@ -186,8 +186,8 @@ const Hero = () => {
               <circle
                 fill="none"
                 stroke="#4831d4"
-                stroke-miterlimit="50"
-                stroke-width="2"
+                strokeMiterlimit="50"
+                strokeWidth="2"
                 cx="30"
                 cy="30"
                 r="20"
@@ -195,8 +195,8 @@ const Hero = () => {
               <rect
                 fill="none"
                 stroke="#4831d4"
-                stroke-miterlimit="50"
-                stroke-width="2"
+                strokeMiterlimit="50"
+                strokeWidth="2"
                 x="70"
                 y="10"
                 width="40"
@@ -205,8 +205,8 @@ const Hero = () => {
               <ellipse
                 fill="none"
                 stroke="#4831d4"
-                stroke-miterlimit="50"
-                stroke-width="2"
+                strokeMiterlimit="50"
+                strokeWidth="2"
                 cx="120"
                 cy="30"
                 rx="25"
@@ -215,8 +215,8 @@ const Hero = () => {
               <line
                 fill="none"
                 stroke="#4831d4"
-                stroke-miterlimit="50"
-                stroke-width="2"
+                strokeMiterlimit="50"
+                strokeWidth="2"
                 x1="160"
                 y1="10"
                 x2="200"
@@ -225,15 +225,15 @@ const Hero = () => {
               <polygon
                 fill="none"
                 stroke="#4831d4"
-                stroke-miterlimit="50"
-                stroke-width="2"
+                strokeMiterlimit="50"
+                strokeWidth="2"
                 points="220,10 260,10 240,50"
               ></polygon>
               <path
                 fill="none"
                 stroke="#4831d4"
-                stroke-miterlimit="50"
-                stroke-width="2"
+                strokeMiterlimit="50"
+                strokeWidth="2"
                 d="M280,10 Q290,5 300,10 T320,30"
               ></path>
             </svg>

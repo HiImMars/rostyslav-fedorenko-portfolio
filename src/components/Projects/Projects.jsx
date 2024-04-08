@@ -37,6 +37,54 @@ const Projects = () => {
           animate={controls}
           variants={staggerVariants}
         >
+          {/* =================== new project (looks like #2) ============ */}
+          <motion.li
+            className={css.projectItem}
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={fadeIn}
+            transition={{ duration: 1.5 }}
+          >
+            <div className={css.descriptionWrapper}>
+              <h3 className={css.projectName}>Kraj Tattoo</h3>
+              <p className={css.projectDescription}>
+                Commercial project for polish tattoo studio. I have developed
+                frontend part of this project and worked in collaboration with
+                backend developer.
+              </p>
+              <ul className={css.techUsedIconsList}>
+                <li className={css.techUsedIconItem}>
+                  <p className={css.techUsedText}>React</p>
+                </li>
+                <li className={css.techUsedIconItem}>
+                  <p className={css.techUsedText}>TypeScript</p>
+                </li>
+                <li className={css.techUsedIconItem}>
+                  <p className={css.techUsedText}>Tailwind CSS</p>
+                </li>
+              </ul>
+              <div className={css.linkWrapper}>
+                <a
+                  href="https://krajtatto.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className={css.link}
+                >
+                  Website
+                  <BiLinkExternal />
+                </a>
+              </div>
+            </div>
+            <a href="https://krajtatto.com/" target="_blank" rel="noreferrer">
+              <img
+                src="/images/kraj-tattoo.png"
+                alt="project screenshot"
+                className={css.projectScreenshot}
+              />
+            </a>
+          </motion.li>
+          {/* =================== / new project (looks like #2) ============ */}
           {/* 1 ================================================================================*/}
           <motion.li
             className={css.projectItem}
